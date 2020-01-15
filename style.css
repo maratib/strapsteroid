@@ -16,6 +16,143 @@ Use it to make something cool, have fun, and share what you've learned with othe
 # Global Font 
 --------------------------------------------------------------*/
 body {
-  background: red;
+  background: #333;
+}
+
+header {
+  background: #ccc;
+  height: 20vh;
+}
+
+footer {
+  background: #ccc;
+}
+
+.active {
+  color: red;
+}
+
+/*-------------------------------------------------------------
+# Navigation 
+--------------------------------------------------------------*/
+.nav-menu {
+  background: #11aa66;
+  padding: 25px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  -webkit-box-shadow: 0px -22px 15px 18px rgba(0, 0, 0, 0.89);
+          box-shadow: 0px -22px 15px 18px rgba(0, 0, 0, 0.89);
+}
+
+.nav-menu .menu-item .nav-link {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: #95ebca;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.nav-menu .menu-item .nav-link:hover {
+  color: yellowgreen;
+}
+
+.nav-menu .active .nav-link {
+  color: yellowgreen1 !important;
+}
+
+.nav-menu .current-page-ancestor a {
+  color: yellowgreen !important;
+}
+
+.nav-menu .line-1,
+.nav-menu .line-2,
+.nav-menu .line-3 {
+  background: #95ebca;
+}
+
+.nav-button {
+  outline: none;
+}
+
+.custom-menu {
+  padding: 9px 30px;
+  background: #fffffa;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  -webkit-box-shadow: 0px -22px 10px 20px rgba(0, 0, 0, 0.89);
+          box-shadow: 0px -22px 10px 20px rgba(0, 0, 0, 0.89);
+}
+
+.custom-menu .navbar-brand {
+  color: #11aa66;
+}
+
+.custom-menu .menu-item .nav-link {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: #11aa66;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.custom-menu .menu-item .nav-link:hover {
+  color: yellowgreen;
+}
+
+.custom-menu .active .nav-link {
+  color: yellowgreen !important;
+}
+
+.custom-menu .line-1,
+.custom-menu .line-2,
+.custom-menu .line-3 {
+  background: #11aa66;
+}
+
+.navbar-toggler {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: 0;
+}
+
+/*-------------------------------------------------------------
+# Nav-Button 
+--------------------------------------------------------------*/
+.line-1,
+.line-2,
+.line-3 {
+  width: 43px;
+  height: 4px;
+  margin: 5px;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+.change .line-1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+          transform: rotate(-45deg) translate(-7px, 6px);
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+.change .line-2 {
+  opacity: 0;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+.change .line-3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -6px);
+          transform: rotate(45deg) translate(-7px, -6px);
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
 }
 /*# sourceMappingURL=style.css.map */

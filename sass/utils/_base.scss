@@ -10,5 +10,16 @@
 
 // width: column-width();
 body {
-  background: red;
+  background: $primary-background;
+}
+
+header {
+  background: #ccc;
+  height: 20vh;
+}
+footer {
+  background: #ccc;
+}
+.active {
+  color: red;
 }

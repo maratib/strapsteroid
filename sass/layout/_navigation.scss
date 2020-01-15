@@ -1,0 +1,102 @@
+/*-------------------------------------------------------------
+# Navigation 
+--------------------------------------------------------------*/
+.nav-menu {
+  background: $navbar-bg-color;
+  padding: 25px;
+  transition: all linear 0.3s;
+  box-shadow: 0px -22px 15px 18px rgba(0, 0, 0, 0.89);
+  .menu-item {
+    .nav-link {
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      color: $navbar-text-color;
+      transition: all linear 0.3s;
+      &:hover {
+        color: yellowgreen;
+      }
+    }
+  }
+  .active {
+    .nav-link {
+      color: yellowgreen1 !important;
+    }
+  }
+  .current-page-ancestor a {
+    color: yellowgreen !important;
+  }
+  .line-1,
+  .line-2,
+  .line-3 {
+    background: $navbar-text-color;
+  }
+}
+.nav-button {
+  outline: none;
+}
+
+.custom-menu {
+  padding: 9px 30px;
+  background: $custom-navbar-bg-color;
+  transition: all linear 0.3s;
+  box-shadow: 0px -22px 10px 20px rgba(0, 0, 0, 0.89);
+  .navbar-brand {
+    color: $custom-navbar-brand-color;
+  }
+  .menu-item {
+    .nav-link {
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      color: $custom-navbar-text-color;
+      transition: all linear 0.3s;
+      &:hover {
+        color: yellowgreen;
+      }
+    }
+  }
+  .active {
+    .nav-link {
+      color: yellowgreen !important;
+    }
+  }
+  .line-1,
+  .line-2,
+  .line-3 {
+    background: $custom-navbar-brand-color;
+  }
+}
+
+.navbar-toggler {
+  box-shadow: none;
+  outline: none;
+  border: 0;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+  }
+}
+
+/*-------------------------------------------------------------
+# Nav-Button 
+--------------------------------------------------------------*/
+.line-1,
+.line-2,
+.line-3 {
+  width: 43px;
+  height: 4px;
+  margin: 5px;
+  transition: all linear 0.4s;
+}
+.change .line-1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+  transition: all linear 0.4s;
+}
+.change .line-2 {
+  opacity: 0;
+  transition: all linear 0.4s;
+}
+.change .line-3 {
+  transform: rotate(45deg) translate(-7px, -6px);
+  transition: all linear 0.4s;
+}
