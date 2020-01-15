@@ -1,0 +1,11 @@
+// Configuration, helpers and base sections
+@import "utils/theme", "utils/variables", "utils/functions", "utils/mixins", "utils/base";
+
+// Layout-related sections
+@import "layout/header", "layout/footer", "./layout/navigation";
+
+// Components
+@import "components/button";
+
+// Page-specific styles
+@import "pages/home";
